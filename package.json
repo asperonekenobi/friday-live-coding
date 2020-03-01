@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/asperonekenobi/friday-live-coding/issues"
   },
-  "homepage": "https://github.com/asperonekenobi/friday-live-coding#readme"
+  "homepage": "https://github.com/asperonekenobi/friday-live-coding#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }
