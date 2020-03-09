@@ -16,11 +16,12 @@
 
 .header__logo-line {
   display: flex;
+
   @include media-mobile {
     justify-content: center;
     flex-grow: 1;
     position: relative;
-}
+  }
 }
 
 .header__hamburger {
