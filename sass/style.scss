@@ -1,4 +1,4 @@
-@import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import "base/_normalize";
 // Abstracts
 @import "abstracts/constants";
 @import "abstracts/mixins";
@@ -10,11 +10,13 @@
 @import "base/logo";
 @import "base/icons";
 @import "base/tags";
+@import "base/hamburger";
 
 // Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/columns";
+@import "layouts/footer";
 
 // Components
 @import "components/contact-us";
@@ -22,3 +24,5 @@
 @import "components/navigation";
 @import "components/tools";
 @import "components/strategies";
+@import "components/about-us";
+

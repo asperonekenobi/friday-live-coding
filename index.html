@@ -13,12 +13,16 @@
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a href="#" class="logo">
-                <object data="./img/Logo.svg" type="image/svg+xml" class="logo-object">
-                    Your browser does not support SVG
-                </object>
-            </a>
-
+            <div class="header__logo-line">
+                <span class="hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <a href="#" class="logo">
+                    <object data="./img/Logo.svg" type="image/svg+xml" class="logo-object">
+                        Your browser does not support SVG
+                    </object>
+                </a>
+            </div>
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__link">Home</li>
@@ -54,7 +58,7 @@
     <section class="tools">
         <div class="wrapper tools__wrapper">
             <h2 class="tools__title">We design tools to unveil your superpowers</h2>
-            <div class="layout-4-column">
+            <div class="layout-4-column tool-container">
                 <div class="tool">
                     <div class="tool__icon">
                         <span class="icon-square icon-square_violet">
@@ -70,8 +74,8 @@
                             <span class="ico ico_snake"></span>
                         </span>
                     </div>
-                    <h4>Design surveys</h4>
-                    <p>Sports betting, lottery and bingo playing for the fun</p>
+                    <h4 class="tool__title">Design surveys</h4>
+                    <p class="tool__text">Sports betting, lottery and bingo playing for the fun</p>
                 </div>
                 <div class="tool">
                     <div class="tool__icon">
@@ -79,8 +83,8 @@
                             <span class="ico ico_heart"></span>
                         </span>
                     </div>
-                    <h4>Preference tests</h4>
-                    <p>The Myspace page defines the individual.</p>
+                    <h4 class="tool__title">Preference tests</h4>
+                    <p class="tool__text">The Myspace page defines the individual.</p>
                 </div>
                 <div class="tool">
                     <div class="tool__icon">
@@ -88,8 +92,8 @@
                             <span class="ico ico_clock"></span>
                         </span>
                     </div>
-                    <h4>Five second tests</h4>
-                    <p>Personal choices and the overall personality of the person.</p>
+                    <h4 class="tool__title">Five second tests</h4>
+                    <p class="tool__text">Personal choices and the overall personality of the person.</p>
                 </div>
             </div>
             <div class="tools__button">
@@ -172,49 +176,51 @@
                 online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them
                 to leave without reading your awesome content or completing a conversion action (e.g., signing up for
                 your newsletter, making a purchase).</p>
-            <div class="layout-3-column">
+            <div class="layout-3-column employee-container">
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <h5 class="employee__name">Kathy Rosenberg</h5>
                         <p class="employee__title">Product Manager</p>
-                        <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
+                        <a class="employee__contact" href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
                     </div>
-                    <img src="./img/employees/kathy.png" alt="Kathy Rosenberg">
+                    <img class="employee__photo" src="./img/employees/kathy.png" alt="Kathy Rosenberg">
                 </div>
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <h5 class="employee__name">Alexandra Boyarskaya</h5>
                         <p class="employee__title">Support Marketing Specialist</p>
-                        <a href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
+                        <a class="employee__contact" href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
                     </div>
-                    <img src="./img/employees/alexandra.png" alt="Alexandra Boyarskaya">
+                    <img class="employee__photo" src="./img/employees/alexandra.png" alt="Alexandra Boyarskaya">
                 </div>
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <h5 class="employee__name">Melani Amini</h5>
                         <p class="employee__title">Photographer</p>
-                        <a href="mailto:melania@gmail.com">melania@gmail.com</a>
+                        <a class="employee__contact" href="mailto:melania@gmail.com">melania@gmail.com</a>
                     </div>
-                    <img src="./img/employees/melani.png" alt="melania@gmail.com">
+                    <img class="employee__photo" src="./img/employees/melani.png" alt="melania@gmail.com">
                 </div>
             </div>
         </div>
     </section>
     <section class="contact-us">
         <div class="wrapper">
-            <h2>Contact Us</h2>
-            <div class="layout-2-column">
+            <h2 class="contact-us__title">Contact Us</h2>
+            <div class="layout-2-column contact-us-container">
                 <div class="contact-us__content">
-                    <p>Your About Us page is vital. It’s often the first stop in any user’s journey through a website or
+                    <p class="contact-us__text">Your About Us page is vital. It’s often the first stop in any user’s
+                        journey through a website or
                         blog. It also shouldn’t be their last, because first impressions count online just as much as
                         they do in the real world. If your visitors aren’t impressed, you can expect them to leave
                         without reading your awesome content or completing a conversion action (e.g., signing up for
                         your newsletter, making a purchase).</p>
-                    <p>
-                        <span class="ico ico_phone"></span> <a href="tel:+375111111111">+375 (22) 345-00-99</a>
+                    <p class="contact-us__link">
+                        <span class="icon-round icon-round_white"> <span class="ico ico_phone"></span> </span> <a
+                            href="tel:+375111111111">+375 (22) 345-00-99</a>
                     </p>
-                    <p>
-                        <span class="ico ico_letter"></span> <a
+                    <p class="contact-us__link">
+                        <span class="icon-round icon-round_white"> <span class="ico ico_letter"></span> </span> <a
                             href="mailto:emailname@gmail.com">emailname@gmail.com</a>
                     </p>
                 </div>
@@ -224,7 +230,8 @@
                             <input type="text" name="name" placeholder="Your name">
                             <input type="email" name="email" placeholder="Your email">
                         </div>
-                        <textarea name="question" placeholder="What do you want to ask?" class="contact-us__line"></textarea>
+                        <textarea name="question" placeholder="What do you want to ask?"
+                            class="contact-us__line"></textarea>
                         <div class="contact-us__button">
                             <button type="submit" class="button button_colored">Send</button>
                         </div>
@@ -234,8 +241,10 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="wrapper">
-            <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
+        <div class="wrapper footer__wrapper">
+            <a href="#" class="logo">
+                <object data="./img/Logo.svg" type="image/svg+xml" class="logo-object"></object>
+            </a>
             <div class="footer-navigation layout-3-column">
                 <div class="footer-navigation__column">
                     <h4 class="footer-navigation__title">Quick Links</h4>
