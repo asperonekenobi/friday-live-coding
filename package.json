@@ -18,6 +18,5 @@
   },
   "homepage": "https://github.com/asperonekenobi/friday-live-coding#readme",
   "dependencies": {
-    "normalize-scss": "^7.0.1"
   }
 }
