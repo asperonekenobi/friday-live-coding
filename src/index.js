@@ -30,7 +30,7 @@ const data = [
 ];
 
 window.onload = function() {
-   console.log('Hello Rolling Scopes!');
+   console.log('Hello RS!');
 
    //Render Articles
    if (data) {
